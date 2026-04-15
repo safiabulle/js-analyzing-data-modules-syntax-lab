@@ -1,49 +1,68 @@
-### Lab: Analyzing Data with Modules and Syntax (JS)
+## Author 
+SAFIA BULLE
 
-**Overview**
+## Description
 
-**Scenario:** You are working for a social media company that has just merged with another. You are tasked with creating a function that takes an undetermined number of arrays of usernames and merges them into one larger array to keep track of all the users on your merged website. You will also want to create a date of merging and return that, combined with the merged array, as an object.
+The Combine Users Project is a simple JavaScript utility function that merges multiple arrays of usernames into one object. It also records the date the merge was performed using DateJS.
+
+This project demonstrates the use of:
+
+Rest Parameters (...args)
+Spread Operator (...)
+Loops
+Objects
+External Packages (datejs)
+Module Exports
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+Make sure you have installed:
+Node.js
+npm
+Install Steps
+npm install
+npm install dates
+Clone project:
+git clone git@github.com:safiabulle/js-analyzing-data-modules-syntax-lab.git
+cd js-analyzing-data-modules-syntax-lab
+
+## Usage
+node index.js
+
+## Features
+Merge unlimited username arrays
+Uses rest parameters
+Uses spread operator
+Returns organized object output
+Automatically adds today's date
+Clean and reusable code
+Beginner friendly project
+
+## Contributing
+Contributions are welcome.
+To contribute:
+Fork the repository
+Create a new branch
+git checkout -b feature-name
+Make your changes
+Commit updates
+git commit -m "Added new feature"
+Push changes
+git push origin feature-name
+Open a Pull Request
+
+## License
+None
 
 
-**Estimated Completion Time:** 30-60 minutes
 
-**Tools and Resources**
-- **Tools:** Visual Studio Code (VSCode), Node.js
-- **Resources:** MDN Web Docs
-- **Setup:** Fork and clone the provided GitHub repository, and run `npm install` to set up the project locally. 
 
-**Instructions**
-
-1. **Fork and Clone the Repository:**
-   - Go to the provided GitHub repository link.
-   - Fork the repository to your GitHub account.
-   - Clone the forked repository to your local machine.
-   - Open the project in VSCode.
-   - Run `npm install` to install all necessary dependencies.
-
-2. **Create a combineUsers function:**
-   - Create a function named `combineUsers` and assign the following arguments:
-     - `...args` (a rest argument) Containing an indeterminate number of arrays
-       - `args` will take the form of an array of arrays
-       - Each internal array contains usernames (strings)
-
-3. **Initialize return object**
-   - Inside `combineUsers`, define the variable `combinedObject` (object).
-     - Initialize with a key of `users` with the value `[]`
-
-4. **Loop through args**
-   - Loop through args to isolate each array
-
-5. **Merge arrays**
-   - Using a spread operator, merge arrays into the `users` attribute of `combinedObject`
-
-6. **Get todays date**
-   - Add an attribute to `combinedObject` called `merge_date` and, using datejs, give it the current date
-     - In datejs, give it the format of `M/d/yyyy`
-     - *Don't forget to `npm install` and to add `require('datejs')` outside of `combineUsers` (datejs is already in package.json)*
-
-7. **Return object**
-   - return `combinedObject`
 
 
 
